@@ -3,79 +3,79 @@ import {motion} from "framer-motion";
 import {ArrowUpRight,CalendarDays,ChevronDown,Clock3,Instagram,Menu,MessageCircle,Sparkles,Star,X} from "lucide-react";
 
 
-import adrieliCapa from "./assets/adrieli-capa.jpg";
+import adrieliCapa from "./assets/webp/adrieli-capa.webp";
 import fotoCapa from "./assets/foto_capa.png";
 
 import { LiquidMetalButton } from "./components/ui/liquid-metal-button";
 
 // SOBRANCELHAS
-import designPersonalizado1 from "./assets/design-personalizado-1.png";
-import designPersonalizado2 from "./assets/design-personalizado-2.png";
-import designPersonalizado3 from "./assets/design-personalizado-3.png";
-import designPersonalizado4 from "./assets/design-personalizado-4.png";
+import designPersonalizado1 from "./assets/webp/design-personalizado-1.webp";
+import designPersonalizado2 from "./assets/webp/design-personalizado-2.webp";
+import designPersonalizado3 from "./assets/webp/design-personalizado-3.webp";
+import designPersonalizado4 from "./assets/webp/design-personalizado-4.webp";
 
-import designHenna1 from "./assets/design-henna-1.png";
-import designHenna2 from "./assets/design-henna-2.png";
-import designHenna3 from "./assets/design-henna-3.png";
-import designHenna4 from "./assets/design-henna-4.png";
+import designHenna1 from "./assets/webp/design-henna-1.webp";
+import designHenna2 from "./assets/webp/design-henna-2.webp";
+import designHenna3 from "./assets/webp/design-henna-3.webp";
+import designHenna4 from "./assets/webp/design-henna-4.webp";
 
-import browLamination1 from "./assets/brow-lamination-1.png";
-import browLamination2 from "./assets/brow-lamination-2.png";
-import browLamination3 from "./assets/brow-lamination-3.png";
-import browLamination4 from "./assets/brow-lamination-4.png";
-import browLamination5 from "./assets/brow-lamination-5.png";
-import browLamination6 from "./assets/brow-lamination-6.png";
+import browLamination1 from "./assets/webp/brow-lamination-1.webp";
+import browLamination2 from "./assets/webp/brow-lamination-2.webp";
+import browLamination3 from "./assets/webp/brow-lamination-3.webp";
+import browLamination4 from "./assets/webp/brow-lamination-4.webp";
+import browLamination5 from "./assets/webp/brow-lamination-5.webp";
+import browLamination6 from "./assets/webp/brow-lamination-6.webp";
 
 
 // PELE
-import dermaplaning1 from "./assets/dermaplaning-1.png";
-import dermaplaning2 from "./assets/dermaplaning-2.png";
-import dermaplaning3 from "./assets/dermaplaning-3.png";
-import dermaplaning4 from "./assets/dermaplaning-4.png";
-import dermaplaning5 from "./assets/dermaplaning-5.png";
+import dermaplaning1 from "./assets/webp/dermaplaning-1.webp";
+import dermaplaning2 from "./assets/webp/dermaplaning-2.webp";
+import dermaplaning3 from "./assets/webp/dermaplaning-3.webp";
+import dermaplaning4 from "./assets/webp/dermaplaning-4.webp";
+import dermaplaning5 from "./assets/webp/dermaplaning-5.webp";
 
-import epilacaoFacial1 from "./assets/epilacao-facial-1.png";
-import epilacaoFacial2 from "./assets/epilacao-facial-2.png";
+import epilacaoFacial1 from "./assets/webp/epilacao-facial-1.webp";
+import epilacaoFacial2 from "./assets/webp/epilacao-facial-2.webp";
 
-import epilacaoBuco1 from "./assets/epilacao-buco-1.png";
+import epilacaoBuco1 from "./assets/webp/epilacao-buco-1.webp";
 
 
 // CÍLIOS
-import lashLifting1 from "./assets/lash-lifting-1.png";
-import lashLifting2 from "./assets/lash-lifting-2.png";
-import lashLifting3 from "./assets/lash-lifting-3.png";
-import lashLifting4 from "./assets/lash-lifting-4.png";
-import lashLifting5 from "./assets/lash-lifting-5.png";
-import lashLifting6 from "./assets/lash-lifting-6.png";
+import lashLifting1 from "./assets/webp/lash-lifting-1.webp";
+import lashLifting2 from "./assets/webp/lash-lifting-2.webp";
+import lashLifting3 from "./assets/webp/lash-lifting-3.webp";
+import lashLifting4 from "./assets/webp/lash-lifting-4.webp";
+import lashLifting5 from "./assets/webp/lash-lifting-5.webp";
+import lashLifting6 from "./assets/webp/lash-lifting-6.webp";
 
-import volumeClassico1 from "./assets/volume-classico-1.png";
-import volumeClassico2 from "./assets/volume-classico-2.png";
-import volumeClassico3 from "./assets/volume-classico-3.png";
-import volumeClassico4 from "./assets/volume-classico-4.png";
-import volumeClassico5 from "./assets/volume-classico-5.png";
+import volumeClassico1 from "./assets/webp/volume-classico-1.webp";
+import volumeClassico2 from "./assets/webp/volume-classico-2.webp";
+import volumeClassico3 from "./assets/webp/volume-classico-3.webp";
+import volumeClassico4 from "./assets/webp/volume-classico-4.webp";
+import volumeClassico5 from "./assets/webp/volume-classico-5.webp";
 
-import volumeLight1 from "./assets/volume-light-1.png";
-import volumeLight2 from "./assets/volume-light-2.png";
+import volumeLight1 from "./assets/webp/volume-light-1.webp";
+import volumeLight2 from "./assets/webp/volume-light-2.webp";
 
-import volumeBrasileiro1 from "./assets/volume-brasileiro-1.png";
-import volumeBrasileiro2 from "./assets/volume-brasileiro-2.png";
-import volumeBrasileiro3 from "./assets/volume-brasileiro-3.png";
+import volumeBrasileiro1 from "./assets/webp/volume-brasileiro-1.webp";
+import volumeBrasileiro2 from "./assets/webp/volume-brasileiro-2.webp";
+import volumeBrasileiro3 from "./assets/webp/volume-brasileiro-3.webp";
 
-import volumeBrasileiroMarrom1 from "./assets/volume-brasileiro-marrom-1.png";
-import volumeBrasileiroMarrom2 from "./assets/volume-brasileiro-marrom-2.png";
-import volumeBrasileiroMarrom3 from "./assets/volume-brasileiro-marrom-3.png";
-import volumeBrasileiroMarrom4 from "./assets/volume-brasileiro-marrom-4.png";
+import volumeBrasileiroMarrom1 from "./assets/webp/volume-brasileiro-marrom-1.webp";
+import volumeBrasileiroMarrom2 from "./assets/webp/volume-brasileiro-marrom-2.webp";
+import volumeBrasileiroMarrom3 from "./assets/webp/volume-brasileiro-marrom-3.webp";
+import volumeBrasileiroMarrom4 from "./assets/webp/volume-brasileiro-marrom-4.webp";
 
-import volumeEgipcio1 from "./assets/volume-egipcio-1.png";
-import volumeEgipcio2 from "./assets/volume-egipcio-2.png";
-import volumeEgipcio3 from "./assets/volume-egipcio-3.png";
-import volumeEgipcio4 from "./assets/volume-egipcio-4.png";
-import volumeEgipcio5 from "./assets/volume-egipcio-5.png";
+import volumeEgipcio1 from "./assets/webp/volume-egipcio-1.webp";
+import volumeEgipcio2 from "./assets/webp/volume-egipcio-2.webp";
+import volumeEgipcio3 from "./assets/webp/volume-egipcio-3.webp";
+import volumeEgipcio4 from "./assets/webp/volume-egipcio-4.webp";
+import volumeEgipcio5 from "./assets/webp/volume-egipcio-5.webp";
 
-import megaVolume1 from "./assets/mega-volume-1.png";
-import megaVolume2 from "./assets/mega-volume-2.png";
-import megaVolume3 from "./assets/mega-volume-3.png";
-import megaVolume4 from "./assets/mega-volume-4.png";
+import megaVolume1 from "./assets/webp/mega-volume-1.webp";
+import megaVolume2 from "./assets/webp/mega-volume-2.webp";
+import megaVolume3 from "./assets/webp/mega-volume-3.webp";
+import megaVolume4 from "./assets/webp/mega-volume-4.webp";
 
 
 
@@ -365,10 +365,12 @@ function ServiceGallery({
   return (
     <div className="relative h-full w-full overflow-hidden">
       <img
-        src={images[current]}
-        alt={`${name} - foto ${current + 1}`}
-        className="h-full w-full object-cover transition duration-500"
-      />
+  src={images[current]}
+  alt={`${name} - foto ${current + 1}`}
+  loading="lazy"
+  decoding="async"
+  className="h-full w-full object-cover transition duration-500"
+/>
 
       {images.length > 1 && (
         <>
@@ -550,11 +552,15 @@ const [openFaq, setOpenFaq] = useState<number | null>(null);
 </a></div></Reveal>
       <Reveal delay={.3}><div className="mt-10 flex items-center gap-6 text-sm text-[#786960]"><span><strong className="text-[#332a26]">+6 anos</strong><br/>de experiência</span><span className="h-10 w-px bg-[#6e55492b]"/><span><strong className="text-[#332a26]">Atendimento</strong><br/>personalizado</span></div></Reveal>
      </div>
-     <Reveal delay={.2} className="relative mx-auto w-full max-w-[540px]"><div className="absolute inset-8 rounded-[48px] bg-[#cfaea155] blur-[60px]"/><div className="relative overflow-hidden rounded-[38px] border border-white/80 bg-white/50 p-3 shadow-[0_35px_100px_-45px_#5e493f] backdrop-blur"><div className="relative aspect-[4/5] overflow-hidden rounded-[30px]"><img
-  src={adrieliCapa}
+     <Reveal delay={.2} className="relative mx-auto w-full max-w-[540px]"><div className="absolute inset-8 rounded-[48px] bg-[#cfaea155] blur-[60px]"/><div className="relative overflow-hidden rounded-[38px] border border-white/80 bg-white/50 p-3 shadow-[0_35px_100px_-45px_#5e493f] backdrop-blur"><div className="relative aspect-[4/5] overflow-hidden rounded-[30px]">
+     <img
+  src={adrieliCapa} 
   alt="Adrieli Mendonça"
+  fetchPriority="high"
+  decoding="async"
   className="h-full w-full object-cover transition duration-700 hover:scale-[1.03]"
-/><div className="absolute inset-x-5 bottom-5 rounded-2xl border border-white/50 bg-[#fffaf5cc] p-4 shadow-xl backdrop-blur-xl"><div className="flex items-center justify-between"><div><p className="text-xs uppercase tracking-[0.18em] text-[#806b60]">Seu momento</p><p className="mt-1 font-serif text-2xl text-[#332a26]">começa aqui.</p></div><div className="grid h-11 w-11 place-items-center rounded-full bg-[#6e5549] text-white"><Sparkles size={18}/></div></div></div></div></div></Reveal>
+  />
+<div className="absolute inset-x-5 bottom-5 rounded-2xl border border-white/50 bg-[#fffaf5cc] p-4 shadow-xl backdrop-blur-xl"><div className="flex items-center justify-between"><div><p className="text-xs uppercase tracking-[0.18em] text-[#806b60]">Seu momento</p><p className="mt-1 font-serif text-2xl text-[#332a26]">começa aqui.</p></div><div className="grid h-11 w-11 place-items-center rounded-full bg-[#6e5549] text-white"><Sparkles size={18}/></div></div></div></div></div></Reveal>
     </div>
    </section>
 
@@ -880,10 +886,12 @@ const [openFaq, setOpenFaq] = useState<number | null>(null);
   className="group relative aspect-[4/5] overflow-hidden rounded-[28px] border border-white/60 shadow-[0_25px_70px_-35px_rgba(79,60,51,0.45)]"
 >
               <img
-                src={item.image}
-                alt={item.name}
-                className="h-full w-full object-cover transition duration-700 group-hover:scale-[1.06]"
-              />
+  src={item.image}
+  alt={item.name}
+  loading="lazy"
+  decoding="async"
+  className="h-full w-full object-cover transition duration-700 group-hover:scale-[1.06]"
+/>
 
               {/* BRILHO NO HOVER */}
               <div className="pointer-events-none absolute inset-0 opacity-0 transition duration-500 group-hover:opacity-100">
@@ -914,7 +922,13 @@ const [openFaq, setOpenFaq] = useState<number | null>(null);
   </div>
 </section>
 
-   <section id="sobre" className="px-5 py-24 lg:px-8 lg:py-36"><div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-[.9fr_1.1fr]"><Reveal className="relative"><div className="absolute -inset-5 rounded-[50px] bg-[#d5b7aa66] blur-[55px]"/><div className="relative aspect-[4/5] overflow-hidden rounded-[38px]"><img src={fotoCapa} alt="Profissional de beleza" className="h-full w-full object-cover"/></div></Reveal><Reveal delay={.1}><p className="eyebrow">Sobre o atendimento</p><h2 className="section-title">Beleza com naturalidade,<br/><span className="italic text-[#8e7164]">cuidado em cada detalhe.</span></h2><p className="mt-7 max-w-xl text-base leading-8 text-[#6d5d55]">Mais do que um procedimento, cada atendimento é pensado para valorizar seus traços e criar um momento de autocuidado.</p><div className="mt-9 grid max-w-xl grid-cols-2 gap-3">{[["01","Atendimento personalizado"],["02","Técnicas cuidadosas"],["03","Ambiente acolhedor"],["04","Resultado natural"]].map(([n,t])=><div key={n} className="rounded-2xl border border-[#5d4c4318] bg-white/45 p-4"><span className="text-xs text-[#a38b7f]">{n}</span><p className="mt-2 text-sm font-medium text-[#51423b]">{t}</p></div>)}</div></Reveal></div></section>
+   <section id="sobre" className="px-5 py-24 lg:px-8 lg:py-36"><div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-[.9fr_1.1fr]"><Reveal className="relative"><div className="absolute -inset-5 rounded-[50px] bg-[#d5b7aa66] blur-[55px]"/><div className="relative aspect-[4/5] overflow-hidden rounded-[38px]"><img
+  src={fotoCapa}
+  alt="Profissional de beleza"
+  loading="lazy"
+  decoding="async"
+  className="h-full w-full object-cover"
+/></div></Reveal><Reveal delay={.1}><p className="eyebrow">Sobre o atendimento</p><h2 className="section-title">Beleza com naturalidade,<br/><span className="italic text-[#8e7164]">cuidado em cada detalhe.</span></h2><p className="mt-7 max-w-xl text-base leading-8 text-[#6d5d55]">Mais do que um procedimento, cada atendimento é pensado para valorizar seus traços e criar um momento de autocuidado.</p><div className="mt-9 grid max-w-xl grid-cols-2 gap-3">{[["01","Atendimento personalizado"],["02","Técnicas cuidadosas"],["03","Ambiente acolhedor"],["04","Resultado natural"]].map(([n,t])=><div key={n} className="rounded-2xl border border-[#5d4c4318] bg-white/45 p-4"><span className="text-xs text-[#a38b7f]">{n}</span><p className="mt-2 text-sm font-medium text-[#51423b]">{t}</p></div>)}</div></Reveal></div></section>
 
    <section className="relative overflow-hidden bg-[#2d2522] px-5 py-24 text-[#f8f3ee] lg:px-8 lg:py-32">
 
