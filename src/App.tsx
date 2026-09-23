@@ -1,4 +1,4 @@
-import {useState} from "react";
+import { useEffect, useRef, useState } from "react";
 import {motion} from "framer-motion";
 import {ArrowUpRight,CalendarDays,ChevronDown,Clock3,Instagram,Menu,MessageCircle,Sparkles,Star,X} from "lucide-react";
 
@@ -349,6 +349,39 @@ function ServiceGallery({
   name: string;
 }) {
   const [current, setCurrent] = useState(0);
+  const galleryRef = useRef<HTMLDivElement | null>(null);
+  const [shouldPreload, setShouldPreload] = useState(false);
+
+  useEffect(() => {
+    const element = galleryRef.current;
+
+    if (!element) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setShouldPreload(true);
+          observer.disconnect();
+        }
+      },
+      {
+        rootMargin: "600px",
+      }
+    );
+
+    observer.observe(element);
+
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (!shouldPreload) return;
+
+    images.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, [images, shouldPreload]);
 
   const previousImage = () => {
     setCurrent((prev) =>
@@ -363,14 +396,17 @@ function ServiceGallery({
   };
 
   return (
-    <div className="relative h-full w-full overflow-hidden">
+    <div
+      ref={galleryRef}
+      className="relative h-full w-full overflow-hidden"
+    >
       <img
-  src={images[current]}
-  alt={`${name} - foto ${current + 1}`}
-  loading="lazy"
-  decoding="async"
-  className="h-full w-full object-cover transition duration-500"
-/>
+        src={images[current]}
+        alt={`${name} - foto ${current + 1}`}
+        loading="lazy"
+        decoding="async"
+        className="h-full w-full object-cover transition duration-500"
+      />
 
       {images.length > 1 && (
         <>
