@@ -477,7 +477,7 @@ const [openFaq, setOpenFaq] = useState<number | null>(null);
     <div className="absolute left-1/2 top-[20%] h-[520px] w-[720px] -translate-x-1/2 rounded-full bg-[#d9b9ae55] blur-[60px] md:blur-[110px]"/><div className="absolute -left-32 top-40 h-80 w-80 rounded-full bg-[#ead9cb70] blur-[90px]"/><div className="absolute -right-32 bottom-20 h-96 w-96 rounded-full bg-[#d2b8aa55] blur-[100px]"/>
     <div className="relative mx-auto grid w-full max-w-7xl items-center gap-12 lg:grid-cols-[1.05fr_.95fr]">
      <div className="max-w-2xl">
-      <Reveal>
+      
   <div
     className="
       mb-7
@@ -521,10 +521,10 @@ const [openFaq, setOpenFaq] = useState<number | null>(null);
 
     <span>Beleza • Cuidado • Você</span>
   </div>
-</Reveal>
-      <Reveal delay={.08}><h1 className="font-serif text-6xl leading-[.93] tracking-[-0.045em] text-[#2a211e] sm:text-7xl lg:text-[6.8rem]">Seu olhar,<span className="block italic text-[#8e7164]">sua essência.</span></h1></Reveal>
-      <Reveal delay={.16}><p className="mt-7 max-w-xl text-base leading-8 text-[#6b5c54] sm:text-lg">Cílios, sobrancelhas e cuidados com a pele em um atendimento pensado para realçar a sua beleza com naturalidade.</p></Reveal>
-      <Reveal delay={.24}><div className="mt-9 flex flex-wrap gap-3"><a
+
+      <h1 className="font-serif text-6xl leading-[.93] tracking-[-0.045em] text-[#2a211e] sm:text-7xl lg:text-[6.8rem]">Seu olhar,<span className="block italic text-[#8e7164]">sua essência.</span></h1>
+      <p className="mt-7 max-w-xl text-base leading-8 text-[#6b5c54] sm:text-lg">Cílios, sobrancelhas e cuidados com a pele em um atendimento pensado para realçar a sua beleza com naturalidade.</p>
+      <div className="mt-9 flex flex-wrap gap-3"><a
   href={WA_LINK}
   target="_blank"
   rel="noopener noreferrer"
@@ -592,10 +592,10 @@ const [openFaq, setOpenFaq] = useState<number | null>(null);
 >
   <Instagram size={18} />
   Instagram
-</a></div></Reveal>
-      <Reveal delay={.3}><div className="mt-10 flex items-center gap-6 text-sm text-[#786960]"><span><strong className="text-[#332a26]">+6 anos</strong><br/>de experiência</span><span className="h-10 w-px bg-[#6e55492b]"/><span><strong className="text-[#332a26]">Atendimento</strong><br/>personalizado</span></div></Reveal>
+</a></div>
+      <div className="mt-10 flex items-center gap-6 text-sm text-[#786960]"><span><strong className="text-[#332a26]">+6 anos</strong><br/>de experiência</span><span className="h-10 w-px bg-[#6e55492b]"/><span><strong className="text-[#332a26]">Atendimento</strong><br/>personalizado</span></div>
      </div>
-     <Reveal delay={.2} className="relative mx-auto w-full max-w-[540px]"><div className="absolute inset-8 rounded-[48px] bg-[#cfaea155] blur-[60px]"/><div className="relative overflow-hidden rounded-[38px] border border-white/80 bg-white/50 p-3 shadow-[0_35px_100px_-45px_#5e493f] backdrop-blur"><div className="relative aspect-[4/5] overflow-hidden rounded-[30px]">
+     <div className="relative mx-auto w-full max-w-[540px]"><div className="absolute inset-8 rounded-[48px] bg-[#cfaea155] blur-[60px]"/><div className="relative overflow-hidden rounded-[38px] border border-white/80 bg-white/50 p-3 shadow-[0_35px_100px_-45px_#5e493f] backdrop-blur"><div className="relative aspect-[4/5] overflow-hidden rounded-[30px]">
      <img
   src={adrieliCapa} 
   alt="Adrieli Mendonça"
@@ -603,7 +603,7 @@ const [openFaq, setOpenFaq] = useState<number | null>(null);
   decoding="async"
   className="h-full w-full object-cover transition duration-700 hover:scale-[1.03]"
   />
-<div className="absolute inset-x-5 bottom-5 rounded-2xl border border-white/50 bg-[#fffaf5cc] p-4 shadow-xl backdrop-blur-md md:backdrop-blur-xl"><div className="flex items-center justify-between"><div><p className="text-xs uppercase tracking-[0.18em] text-[#806b60]">Seu momento</p><p className="mt-1 font-serif text-2xl text-[#332a26]">começa aqui.</p></div><div className="grid h-11 w-11 place-items-center rounded-full bg-[#6e5549] text-white"><Sparkles size={18}/></div></div></div></div></div></Reveal>
+<div className="absolute inset-x-5 bottom-5 rounded-2xl border border-white/50 bg-[#fffaf5cc] p-4 shadow-xl backdrop-blur-md md:backdrop-blur-xl"><div className="flex items-center justify-between"><div><p className="text-xs uppercase tracking-[0.18em] text-[#806b60]">Seu momento</p><p className="mt-1 font-serif text-2xl text-[#332a26]">começa aqui.</p></div><div className="grid h-11 w-11 place-items-center rounded-full bg-[#6e5549] text-white"><Sparkles size={18}/></div></div></div></div></div></div>
     </div>
    </section>
 
