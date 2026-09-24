@@ -483,7 +483,29 @@ useEffect(() => {
   </header>
   <main id="inicio">
    <section className="relative flex min-h-[760px] items-center overflow-hidden px-5 pb-24 pt-36 lg:min-h-[850px] lg:px-8">
-    <div className="absolute left-1/2 top-[20%] h-[520px] w-[720px] -translate-x-1/2 rounded-full bg-[#d9b9ae55] blur-[60px] md:blur-[110px]"/><div className="absolute -left-32 top-40 h-80 w-80 rounded-full bg-[#ead9cb70] blur-[90px]"/><div className="absolute -right-32 bottom-20 h-96 w-96 rounded-full bg-[#d2b8aa55] blur-[100px]"/>
+    <div
+  className="pointer-events-none absolute left-1/2 top-[20%] h-[620px] w-[820px] -translate-x-1/2"
+  style={{
+    background:
+      "radial-gradient(ellipse at center, rgba(217,185,174,0.42) 0%, rgba(217,185,174,0.20) 40%, transparent 72%)",
+  }}
+/>
+
+<div
+  className="pointer-events-none absolute -left-32 top-32 h-[420px] w-[420px]"
+  style={{
+    background:
+      "radial-gradient(circle at center, rgba(234,217,203,0.45) 0%, rgba(234,217,203,0.18) 45%, transparent 72%)",
+  }}
+/>
+
+<div
+  className="pointer-events-none absolute -right-32 bottom-10 h-[470px] w-[470px]"
+  style={{
+    background:
+      "radial-gradient(circle at center, rgba(210,184,170,0.38) 0%, rgba(210,184,170,0.16) 45%, transparent 72%)",
+  }}
+/>
     <div className="relative mx-auto grid w-full max-w-7xl items-center gap-12 lg:grid-cols-[1.05fr_.95fr]">
      <div className="max-w-2xl">
       
@@ -604,7 +626,7 @@ useEffect(() => {
 </a></div>
       <div className="mt-10 flex items-center gap-6 text-sm text-[#786960]"><span><strong className="text-[#332a26]">+6 anos</strong><br/>de experiência</span><span className="h-10 w-px bg-[#6e55492b]"/><span><strong className="text-[#332a26]">Atendimento</strong><br/>personalizado</span></div>
      </div>
-     <div className="relative mx-auto w-full max-w-[540px]"><div className="absolute inset-8 rounded-[48px] bg-[#cfaea155] blur-[60px]"/><div className="relative overflow-hidden rounded-[38px] border border-white/80 bg-white/50 p-3 shadow-[0_35px_100px_-45px_#5e493f] backdrop-blur"><div className="relative aspect-[4/5] overflow-hidden rounded-[30px]">
+     <div className="relative mx-auto w-full max-w-[540px]"><div className="absolute inset-8 rounded-[48px] bg-[#cfaea155] blur-[60px]"/><div className="relative overflow-hidden rounded-[38px] border border-white/80 bg-white/70 p-3 shadow-[0_35px_100px_-45px_#5e493f]"><div className="relative aspect-[4/5] overflow-hidden rounded-[30px]">
      <img
   src={adrieliCapa} 
   alt="Adrieli Mendonça"
@@ -612,7 +634,7 @@ useEffect(() => {
   decoding="async"
   className="h-full w-full object-cover transition duration-700 hover:scale-[1.03]"
   />
-<div className="absolute inset-x-5 bottom-5 rounded-2xl border border-white/50 bg-[#fffaf5cc] p-4 shadow-xl backdrop-blur-md md:backdrop-blur-xl"><div className="flex items-center justify-between"><div><p className="text-xs uppercase tracking-[0.18em] text-[#806b60]">Seu momento</p><p className="mt-1 font-serif text-2xl text-[#332a26]">começa aqui.</p></div><div className="grid h-11 w-11 place-items-center rounded-full bg-[#6e5549] text-white"><Sparkles size={18}/></div></div></div></div></div></div>
+<div className="absolute inset-x-5 bottom-5 rounded-2xl border border-white/50 bg-[#fffaf5ed] p-4 shadow-xl"><div className="flex items-center justify-between"><div><p className="text-xs uppercase tracking-[0.18em] text-[#806b60]">Seu momento</p><p className="mt-1 font-serif text-2xl text-[#332a26]">começa aqui.</p></div><div className="grid h-11 w-11 place-items-center rounded-full bg-[#6e5549] text-white"><Sparkles size={18}/></div></div></div></div></div></div>
     </div>
    </section>
 {restOfPageReady && (
