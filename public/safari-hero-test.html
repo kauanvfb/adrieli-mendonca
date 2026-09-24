@@ -13,17 +13,61 @@
 
     body {
       margin: 0;
+      overflow-x: hidden;
       background: #f8f3ee;
       color: #241f1c;
       font-family: system-ui, sans-serif;
     }
 
     .hero {
+      position: relative;
       min-height: 100vh;
       display: grid;
       align-items: center;
       gap: 40px;
-      padding: 80px 24px;
+      padding: 100px 24px;
+      overflow: hidden;
+    }
+
+    .blob1,
+    .blob2,
+    .blob3 {
+      position: absolute;
+      border-radius: 999px;
+      pointer-events: none;
+    }
+
+    .blob1 {
+      width: 720px;
+      height: 520px;
+      left: 50%;
+      top: 20%;
+      transform: translateX(-50%);
+      background: rgba(217, 185, 174, .33);
+      filter: blur(110px);
+    }
+
+    .blob2 {
+      width: 320px;
+      height: 320px;
+      left: -130px;
+      top: 160px;
+      background: rgba(234, 217, 203, .44);
+      filter: blur(90px);
+    }
+
+    .blob3 {
+      width: 380px;
+      height: 380px;
+      right: -130px;
+      bottom: 80px;
+      background: rgba(210, 184, 170, .33);
+      filter: blur(100px);
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
     }
 
     h1 {
@@ -40,22 +84,72 @@
     }
 
     p {
+      max-width: 550px;
       line-height: 1.8;
       color: #6b5c54;
+    }
+
+    .button {
+      display: inline-flex;
+      margin-top: 20px;
+      padding: 16px 26px;
+      border-radius: 999px;
+      color: white;
+      text-decoration: none;
+
+      background:
+        linear-gradient(
+          110deg,
+          #6e5549 0%,
+          #8e7164 20%,
+          #d7b3a3 38%,
+          #8e7164 55%,
+          #6e5549 75%,
+          #a78373 100%
+        );
+
+      background-size: 250% 100%;
+      animation: liquidMetalFlow 5s ease-in-out infinite;
+    }
+
+    .photo-card {
+      position: relative;
+      z-index: 2;
+      padding: 12px;
+      border-radius: 38px;
+      border: 1px solid rgba(255,255,255,.8);
+      background: rgba(255,255,255,.5);
+
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+
+      box-shadow: 0 35px 100px -45px #5e493f;
     }
 
     img {
       display: block;
       width: 100%;
-      max-width: 540px;
-      margin: auto;
       border-radius: 30px;
+    }
+
+    @keyframes liquidMetalFlow {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
     }
 
     @media (min-width: 900px) {
       .hero {
         grid-template-columns: 1fr 1fr;
-        padding: 80px;
+        padding: 100px 80px;
       }
     }
   </style>
@@ -65,7 +159,12 @@
 
   <main class="hero">
 
-    <div>
+    <div class="blob1"></div>
+    <div class="blob2"></div>
+    <div class="blob3"></div>
+
+    <div class="content">
+
       <h1>
         Seu olhar,
         <span>sua essência.</span>
@@ -75,12 +174,21 @@
         Cílios, sobrancelhas e cuidados com a pele em um atendimento
         pensado para realçar a sua beleza com naturalidade.
       </p>
+
+      <a class="button" href="#">
+        Agendar agora
+      </a>
+
     </div>
 
-    <img
-      src="/adrieli-capa.webp"
-      alt="Adrieli Mendonça"
-    >
+    <div class="photo-card">
+
+      <img
+        src="/adrieli-capa.webp"
+        alt="Adrieli Mendonça"
+      >
+
+    </div>
 
   </main>
 
