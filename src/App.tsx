@@ -3,28 +3,28 @@ import {motion} from "framer-motion";
 import {ArrowUpRight,CalendarDays,ChevronDown,Clock3,Instagram,Menu,MessageCircle,Sparkles,Star,X} from "lucide-react";
 
 
-import adrieliCapa from "./assets/webp/adrieli-capa.webp";
+import adrieliCapa from "./assets/webp-optimized/adrieli-capa.webp";
 import fotoCapa from "./assets/foto_capa.png";
 
 import { LiquidMetalButton } from "./components/ui/liquid-metal-button";
 
 // SOBRANCELHAS
-import designPersonalizado1 from "./assets/webp/design-personalizado-1.webp";
-import designPersonalizado2 from "./assets/webp/design-personalizado-2.webp";
-import designPersonalizado3 from "./assets/webp/design-personalizado-3.webp";
-import designPersonalizado4 from "./assets/webp/design-personalizado-4.webp";
+import designPersonalizado1 from "./assets/webp-optimized/design-personalizado-1.webp";
+import designPersonalizado2 from "./assets/webp-optimized/design-personalizado-2.webp";
+import designPersonalizado3 from "./assets/webp-optimized/design-personalizado-3.webp";
+import designPersonalizado4 from "./assets/webp-optimized/design-personalizado-4.webp";
 
-import designHenna1 from "./assets/webp/design-henna-1.webp";
-import designHenna2 from "./assets/webp/design-henna-2.webp";
-import designHenna3 from "./assets/webp/design-henna-3.webp";
-import designHenna4 from "./assets/webp/design-henna-4.webp";
+import designHenna1 from "./assets/webp-optimized/design-henna-1.webp";
+import designHenna2 from "./assets/webp-optimized/design-henna-2.webp";
+import designHenna3 from "./assets/webp-optimized/design-henna-3.webp";
+import designHenna4 from "./assets/webp-optimized/design-henna-4.webp"; 
 
-import browLamination1 from "./assets/webp/brow-lamination-1.webp";
-import browLamination2 from "./assets/webp/brow-lamination-2.webp";
-import browLamination3 from "./assets/webp/brow-lamination-3.webp";
-import browLamination4 from "./assets/webp/brow-lamination-4.webp";
-import browLamination5 from "./assets/webp/brow-lamination-5.webp";
-import browLamination6 from "./assets/webp/brow-lamination-6.webp";
+import browLamination1 from "./assets/webp-optimized/brow-lamination-1.webp";
+import browLamination2 from "./assets/webp-optimized/brow-lamination-2.webp";
+import browLamination3 from "./assets/webp-optimized/brow-lamination-3.webp";
+import browLamination4 from "./assets/webp-optimized/brow-lamination-4.webp";
+import browLamination5 from "./assets/webp-optimized/brow-lamination-5.webp";
+import browLamination6 from "./assets/webp-optimized/brow-lamination-6.webp";
 
 
 // PELE
@@ -41,41 +41,41 @@ import epilacaoBuco1 from "./assets/webp/epilacao-buco-1.webp";
 
 
 // CÍLIOS
-import lashLifting1 from "./assets/webp/lash-lifting-1.webp";
-import lashLifting2 from "./assets/webp/lash-lifting-2.webp";
-import lashLifting3 from "./assets/webp/lash-lifting-3.webp";
-import lashLifting4 from "./assets/webp/lash-lifting-4.webp";
-import lashLifting5 from "./assets/webp/lash-lifting-5.webp";
-import lashLifting6 from "./assets/webp/lash-lifting-6.webp";
+import lashLifting1 from "./assets/webp-optimized/lash-lifting-1.webp";
+import lashLifting2 from "./assets/webp-optimized/lash-lifting-2.webp";
+import lashLifting3 from "./assets/webp-optimized/lash-lifting-3.webp";
+import lashLifting4 from "./assets/webp-optimized/lash-lifting-4.webp";
+import lashLifting5 from "./assets/webp-optimized/lash-lifting-5.webp";
+import lashLifting6 from "./assets/webp-optimized/lash-lifting-6.webp";
 
-import volumeClassico1 from "./assets/webp/volume-classico-1.webp";
-import volumeClassico2 from "./assets/webp/volume-classico-2.webp";
-import volumeClassico3 from "./assets/webp/volume-classico-3.webp";
-import volumeClassico4 from "./assets/webp/volume-classico-4.webp";
-import volumeClassico5 from "./assets/webp/volume-classico-5.webp";
+import volumeClassico1 from "./assets/webp-optimized/volume-classico-1.webp";
+import volumeClassico2 from "./assets/webp-optimized/volume-classico-2.webp";
+import volumeClassico3 from "./assets/webp-optimized/volume-classico-3.webp";
+import volumeClassico4 from "./assets/webp-optimized/volume-classico-4.webp";
+import volumeClassico5 from "./assets/webp-optimized/volume-classico-5.webp";
 
-import volumeLight1 from "./assets/webp/volume-light-1.webp";
-import volumeLight2 from "./assets/webp/volume-light-2.webp";
+import volumeLight1 from "./assets/webp-optimized/volume-light-1.webp";
+import volumeLight2 from "./assets/webp-optimized/volume-light-2.webp";
 
-import volumeBrasileiro1 from "./assets/webp/volume-brasileiro-1.webp";
-import volumeBrasileiro2 from "./assets/webp/volume-brasileiro-2.webp";
-import volumeBrasileiro3 from "./assets/webp/volume-brasileiro-3.webp";
+import volumeBrasileiro1 from "./assets/webp-optimized/volume-brasileiro-1.webp";
+import volumeBrasileiro2 from "./assets/webp-optimized/volume-brasileiro-2.webp";
+import volumeBrasileiro3 from "./assets/webp-optimized/volume-brasileiro-3.webp";
 
-import volumeBrasileiroMarrom1 from "./assets/webp/volume-brasileiro-marrom-1.webp";
-import volumeBrasileiroMarrom2 from "./assets/webp/volume-brasileiro-marrom-2.webp";
-import volumeBrasileiroMarrom3 from "./assets/webp/volume-brasileiro-marrom-3.webp";
-import volumeBrasileiroMarrom4 from "./assets/webp/volume-brasileiro-marrom-4.webp";
+import volumeBrasileiroMarrom1 from "./assets/webp-optimized/volume-brasileiro-marrom-1.webp"; 
+import volumeBrasileiroMarrom2 from "./assets/webp-optimized/volume-brasileiro-marrom-2.webp";
+import volumeBrasileiroMarrom3 from "./assets/webp-optimized/volume-brasileiro-marrom-3.webp";
+import volumeBrasileiroMarrom4 from "./assets/webp-optimized/volume-brasileiro-marrom-4.webp";
 
-import volumeEgipcio1 from "./assets/webp/volume-egipcio-1.webp";
-import volumeEgipcio2 from "./assets/webp/volume-egipcio-2.webp";
-import volumeEgipcio3 from "./assets/webp/volume-egipcio-3.webp";
-import volumeEgipcio4 from "./assets/webp/volume-egipcio-4.webp";
-import volumeEgipcio5 from "./assets/webp/volume-egipcio-5.webp";
+import volumeEgipcio1 from "./assets/webp-optimized/volume-egipcio-1.webp";
+import volumeEgipcio2 from "./assets/webp-optimized/volume-egipcio-2.webp";
+import volumeEgipcio3 from "./assets/webp-optimized/volume-egipcio-3.webp";
+import volumeEgipcio4 from "./assets/webp-optimized/volume-egipcio-4.webp";
+import volumeEgipcio5 from "./assets/webp-optimized/volume-egipcio-5.webp";
 
-import megaVolume1 from "./assets/webp/mega-volume-1.webp";
-import megaVolume2 from "./assets/webp/mega-volume-2.webp";
-import megaVolume3 from "./assets/webp/mega-volume-3.webp";
-import megaVolume4 from "./assets/webp/mega-volume-4.webp";
+import megaVolume1 from "./assets/webp-optimized/mega-volume-1.webp";
+import megaVolume2 from "./assets/webp-optimized/mega-volume-2.webp";
+import megaVolume3 from "./assets/webp-optimized/mega-volume-3.webp";
+import megaVolume4 from "./assets/webp-optimized/mega-volume-4.webp";
 
 
 
