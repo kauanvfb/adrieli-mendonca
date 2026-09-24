@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Teste Hero Safari</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #f8f3ee;
+      color: #241f1c;
+      font-family: system-ui, sans-serif;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: grid;
+      align-items: center;
+      gap: 40px;
+      padding: 80px 24px;
+    }
+
+    h1 {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(3.5rem, 10vw, 7rem);
+      line-height: .93;
+    }
+
+    h1 span {
+      display: block;
+      font-style: italic;
+      color: #8e7164;
+    }
+
+    p {
+      line-height: 1.8;
+      color: #6b5c54;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      max-width: 540px;
+      margin: auto;
+      border-radius: 30px;
+    }
+
+    @media (min-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr 1fr;
+        padding: 80px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="hero">
+
+    <div>
+      <h1>
+        Seu olhar,
+        <span>sua essência.</span>
+      </h1>
+
+      <p>
+        Cílios, sobrancelhas e cuidados com a pele em um atendimento
+        pensado para realçar a sua beleza com naturalidade.
+      </p>
+    </div>
+
+    <img
+      src="/adrieli-capa.webp"
+      alt="Adrieli Mendonça"
+    >
+
+  </main>
+
+</body>
+</html>
