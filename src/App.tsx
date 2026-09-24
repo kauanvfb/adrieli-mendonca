@@ -365,7 +365,7 @@ function ServiceGallery({
         }
       },
       {
-        rootMargin: "600px",
+        rootMargin: "250px",
       }
     );
 
@@ -375,13 +375,20 @@ function ServiceGallery({
   }, []);
 
   useEffect(() => {
-    if (!shouldPreload) return;
+  if (!shouldPreload || images.length <= 1) return;
 
-    images.forEach((src) => {
-      const img = new Image();
-      img.src = src;
-    });
-  }, [images, shouldPreload]);
+  const nextIndex =
+    current === images.length - 1 ? 0 : current + 1;
+
+  const previousIndex =
+    current === 0 ? images.length - 1 : current - 1;
+
+  const nextImage = new Image();
+  nextImage.src = images[nextIndex];
+
+  const previousImage = new Image();
+  previousImage.src = images[previousIndex];
+}, [current, images, shouldPreload]);
 
   const previousImage = () => {
     setCurrent((prev) =>
@@ -456,7 +463,7 @@ export default function App(){
 const [filter, setFilter] = useState("Todos");
 const [openFaq, setOpenFaq] = useState<number | null>(null);
  return <div className="min-h-screen overflow-x-hidden bg-[#f8f3ee] text-[#241f1c]">
-  <header className="fixed inset-x-0 top-0 z-50 border-b border-[#2d272320] bg-[#f8f3eee8] backdrop-blur-xl">
+  <header className="fixed inset-x-0 top-0 z-50 border-b border-[#2d272320] bg-[#f8f3eee8] backdrop-blur-md md:backdrop-blur-xl">
    <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
     <a href="#inicio"><Logo/></a>
     <nav className="hidden items-center gap-8 text-sm text-[#5d514a] md:flex"><a href="#procedimentos" className="nav-link relative">Procedimentos</a><a href="#resultados" className="nav-link relative">Resultados</a><a href="#sobre" className="nav-link relative">Sobre</a><a href="#faq" className="nav-link relative">Dúvidas</a></nav>
@@ -467,7 +474,7 @@ const [openFaq, setOpenFaq] = useState<number | null>(null);
   </header>
   <main id="inicio">
    <section className="relative flex min-h-[760px] items-center overflow-hidden px-5 pb-24 pt-36 lg:min-h-[850px] lg:px-8">
-    <div className="absolute left-1/2 top-[20%] h-[520px] w-[720px] -translate-x-1/2 rounded-full bg-[#d9b9ae55] blur-[110px]"/><div className="absolute -left-32 top-40 h-80 w-80 rounded-full bg-[#ead9cb70] blur-[90px]"/><div className="absolute -right-32 bottom-20 h-96 w-96 rounded-full bg-[#d2b8aa55] blur-[100px]"/>
+    <div className="absolute left-1/2 top-[20%] h-[520px] w-[720px] -translate-x-1/2 rounded-full bg-[#d9b9ae55] blur-[60px] md:blur-[110px]"/><div className="absolute -left-32 top-40 h-80 w-80 rounded-full bg-[#ead9cb70] blur-[90px]"/><div className="absolute -right-32 bottom-20 h-96 w-96 rounded-full bg-[#d2b8aa55] blur-[100px]"/>
     <div className="relative mx-auto grid w-full max-w-7xl items-center gap-12 lg:grid-cols-[1.05fr_.95fr]">
      <div className="max-w-2xl">
       <Reveal>
@@ -596,7 +603,7 @@ const [openFaq, setOpenFaq] = useState<number | null>(null);
   decoding="async"
   className="h-full w-full object-cover transition duration-700 hover:scale-[1.03]"
   />
-<div className="absolute inset-x-5 bottom-5 rounded-2xl border border-white/50 bg-[#fffaf5cc] p-4 shadow-xl backdrop-blur-xl"><div className="flex items-center justify-between"><div><p className="text-xs uppercase tracking-[0.18em] text-[#806b60]">Seu momento</p><p className="mt-1 font-serif text-2xl text-[#332a26]">começa aqui.</p></div><div className="grid h-11 w-11 place-items-center rounded-full bg-[#6e5549] text-white"><Sparkles size={18}/></div></div></div></div></div></Reveal>
+<div className="absolute inset-x-5 bottom-5 rounded-2xl border border-white/50 bg-[#fffaf5cc] p-4 shadow-xl backdrop-blur-md md:backdrop-blur-xl"><div className="flex items-center justify-between"><div><p className="text-xs uppercase tracking-[0.18em] text-[#806b60]">Seu momento</p><p className="mt-1 font-serif text-2xl text-[#332a26]">começa aqui.</p></div><div className="grid h-11 w-11 place-items-center rounded-full bg-[#6e5549] text-white"><Sparkles size={18}/></div></div></div></div></div></Reveal>
     </div>
    </section>
 
