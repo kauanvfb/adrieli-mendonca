@@ -462,6 +462,15 @@ export default function App(){
  const [menuOpen, setMenuOpen] = useState(false);
 const [filter, setFilter] = useState("Todos");
 const [openFaq, setOpenFaq] = useState<number | null>(null);
+const [restOfPageReady, setRestOfPageReady] = useState(false);
+
+useEffect(() => {
+  const timer = window.setTimeout(() => {
+    setRestOfPageReady(true);
+  }, 250);
+
+  return () => window.clearTimeout(timer);
+}, []);
  return <div className="min-h-screen overflow-x-hidden bg-[#f8f3ee] text-[#241f1c]">
   <header className="fixed inset-x-0 top-0 z-50 border-b border-[#2d272320] bg-[#f8f3eee8] backdrop-blur-md md:backdrop-blur-xl">
    <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
@@ -606,7 +615,8 @@ const [openFaq, setOpenFaq] = useState<number | null>(null);
 <div className="absolute inset-x-5 bottom-5 rounded-2xl border border-white/50 bg-[#fffaf5cc] p-4 shadow-xl backdrop-blur-md md:backdrop-blur-xl"><div className="flex items-center justify-between"><div><p className="text-xs uppercase tracking-[0.18em] text-[#806b60]">Seu momento</p><p className="mt-1 font-serif text-2xl text-[#332a26]">começa aqui.</p></div><div className="grid h-11 w-11 place-items-center rounded-full bg-[#6e5549] text-white"><Sparkles size={18}/></div></div></div></div></div></div>
     </div>
    </section>
-
+{restOfPageReady && (
+  <>
    <section
   id="procedimentos"
   className="px-5 py-24 lg:px-8 lg:py-32"
@@ -1160,6 +1170,8 @@ const [openFaq, setOpenFaq] = useState<number | null>(null);
 </a>
 
 </div></div></div></Reveal></section>
+  </>
+)}
   </main>
   <footer className="border-t border-[#5d4c4315] px-5 py-10 lg:px-8"><div className="mx-auto flex max-w-7xl flex-col gap-6 md:flex-row md:items-center md:justify-between"><Logo/><p className="text-xs text-[#8a7a71]">© {new Date().getFullYear()} Adrieli Mendonça. Todos os direitos reservados.</p><div className="flex gap-2"><a href={INSTAGRAM_LINK} aria-label="Instagram" className="grid h-10 w-10 place-items-center rounded-full border border-[#5d4c4320] transition hover:bg-white"><Instagram size={17}/></a><a href={WA_LINK} aria-label="WhatsApp" className="grid h-10 w-10 place-items-center rounded-full border border-[#5d4c4320] transition hover:bg-white"><MessageCircle size={17}/></a></div></div></footer>
  </div>
