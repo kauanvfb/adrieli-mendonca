@@ -95,7 +95,7 @@ const services = [
   {
     category: "Sobrancelhas",
     name: "Design Personalizado",
-    price: "R$ 40",
+    price: "R$ 45",
     duration: "30min",
     images: [
   designPersonalizado1,
@@ -109,7 +109,7 @@ const services = [
   {
     category: "Sobrancelhas",
     name: "Design com Henna",
-    price: "R$ 55",
+    price: "R$ 60",
     duration: "1h",
     images: [
   designHenna1,
